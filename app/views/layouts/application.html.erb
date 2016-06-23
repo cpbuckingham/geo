@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GoHuntGeo</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">GoHuntGeo</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <form class="navbar-form navbar-right">
+          <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#myLoginModal">Sign Up</button>
+          <button type="submit" class="btn btn-danger" data-toggle="modal" data-target="#mySignUpModal">Sign Up</button>
+        </form>
+      </div><!--/.navbar-collapse -->
+    </div>
+  </nav>
+  <!--modal login -->
+  <div class="modal fade" id="myLoginModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title">Log-in</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+          </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+        <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
+        </div>
+            <p class="text-right"><a href="#">Forgot password?</a></p>
+          </div>
+          <div class="modal-footer">
+            <a href="#" data-dismiss="modal" class="btn">Close</a>
+            <a href="#" class="btn btn-primary">Log-in</a>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!--modal signup -->
+  <div class="modal fade" id="mySignUpModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title">Sign-Up</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+          </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+        <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
+        </div>
+            <p class="text-right"><a href="#">Forgot password?</a></p>
+          </div>
+          <div class="modal-footer">
+            <a href="#" data-dismiss="modal" class="btn">Close</a>
+            <a href="#" class="btn btn-primary">Sign-Up</a>
+          </div>
+        </div>
+      </div>
+  </div>
+<%= yield %>
+
+</body>
+</html>
