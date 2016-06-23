@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GoHuntGeo</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">GoHuntGeo</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <form class="navbar-form navbar-right">
+          <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#myLoginModal">Sign Up</button>
+          <button type="submit" class="btn btn-danger" data-toggle="modal" data-target="#mySignUpModal">Sign Up</button>
+        </form>
+      </div><!--/.navbar-collapse -->
+    </div>
+  </nav>
+  <!--modal login -->
+  <div class="modal fade" id="myLoginModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title">Log-in</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+          </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+        <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
+        </div>
+            <p class="text-right"><a href="#">Forgot password?</a></p>
+          </div>
+          <div class="modal-footer">
+            <a href="#" data-dismiss="modal" class="btn">Close</a>
+            <a href="#" class="btn btn-primary">Log-in</a>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!--modal signup -->
+  <div class="modal fade" id="mySignUpModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title">Sign-Up</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+          </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+        <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
+        </div>
+            <p class="text-right"><a href="#">Forgot password?</a></p>
+          </div>
+          <div class="modal-footer">
+            <a href="#" data-dismiss="modal" class="btn">Close</a>
+            <a href="#" class="btn btn-primary">Sign-Up</a>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>Hello, world!</h1>
+    <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+  </div>
+</div>
+
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Heading</h2>
+      <img src="/flag.jpg" style= "height:90%; width:95%">
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+      <h2>Heading</h2>
+      <img src="/flag.jpg" style= "height:90%; width:95%">
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+   </div>
+    <div class="col-md-4">
+      <h2>Heading</h2>
+      <img src="/flag.jpg" style= "height:90%; width:95%">
+      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    </div>
+  </div>
+
+  <hr>
+
+  <footer>
+    <p>&copy; 2016 GoHuntGeo, Inc.</p>
+  </footer>
+</div> <!-- /container -->
+<%= yield %>
+
+</body>
+</html>
