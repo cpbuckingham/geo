@@ -15,9 +15,18 @@
 //= require turbolinks
 //= require_tree .
 $(document).ready(function() {
-
+	// if (window.chrome) {
+	// 	$("[type=video\\\/mp4]").each(function() {
+	// 			$(this).attr('src', $(this).attr('src').replace(".mp4", "_c.mp4"));
+	// 	});
+	//
+	// 	if( window.chrome ) {
+	// 		console.log($("video"));
+	// 		$("video").replaceWith($('<video id="videoId" width="100%" autoplay loop controls="controls"><source src="video.mp4" type="video/mp4"></video>'));
+	// 	}
+	// }
 	"use strict";
-
+ ``
     /************** Nav Scripts **************/
 
     $(window).scroll(function() {
