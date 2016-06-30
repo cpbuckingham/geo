@@ -8,7 +8,7 @@
         <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
         <%= csrf_meta_tags %>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <!-- <link href="bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/> -->
         <link href="elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="pe-icon-7-stroke.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="theme.css" rel="stylesheet" type="text/css" media="all"/>
@@ -150,11 +150,7 @@
               </div>
           </div>
           <!--modal signup -->
-            <%= f.text_field :username%>
-            <%= f.text_field :email%>
-            <%= f.password_field :password%>
-            <%= f.password_field :password_confirmation%>
-            <%= f.submit :Signup %>
+
           <div class="modal fade" id="mySignUpModal">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -164,13 +160,22 @@
                     <h4 class="modal-title">Sign-Up</h4>
                   </div>
                   <div class="modal-body">
+
                     <div class="form-group">
-                  <label for="username">Username</label>
-                  <input class="form-control" id="username" placeholder="username" type="username">
+                      <label for="username">Username</label>
+                      <input class="form-control" id="username" placeholder="username">
+                      <%= f.text_field :username, class:"form-control"%>
+                    </div>
+                    <div class="form-group">
+                  <label for="usernamel">Username</label>
+                  <input class="form-control" id="username" placeholder="username" type="email">
+                  <%= f.email_field :email, class:"form-control"%>
                   </div>
+
                   <div class="form-group">
                 <label for="email">Email</label>
                 <input class="form-control" id="email" placeholder="email" type="email">
+                <%= f.email_field :email, class:"form-control"%>
                 </div>
                 <div class="form-group">
               <label for="password">Password</label>
