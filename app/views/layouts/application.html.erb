@@ -18,6 +18,8 @@
 
     	<a id="top"></a>
 
+
+
 		<div class="nav-container">
 
 				<nav class="overlay-nav">
@@ -25,8 +27,8 @@
 						<div class="row">
 							<div class="col-md-2">
                 <a href="index.html">
-								<img alt="Logo" class="logo logo-light" src="logo.jpg">
-								<img alt="Logo" class="logo logo-dark" src="logo.jpg">
+								<!-- <img alt="Logo" class="logo logo-light" src="logo.jpg">
+								<img alt="Logo" class="logo logo-dark" src="logo.jpg"> -->
                 </a>
 							</div>
 
@@ -35,17 +37,17 @@
 
                   <!-- <li><a class="inner-link" href="schedule.html">Schedule</a></li> -->
 									<!-- <li><a href="index.html#about">About</a> -->
-                  <li><a class="inner-link" href="index.html#cfp">Call for Speakers</a></li>
-                  <li><a class="inner-link" href="index.html#sponsor">Sponsor</a></li>
-                  <li class="has-dropdown"><a href="index.html#about">About</a>
+                  <li><a class="inner-link" href="index.html#cfp">About</a></li>
+                  <!-- <li><a class="inner-link" href="index.html#sponsor">Sponsor</a></li> -->
+                  <!-- <li class="has-dropdown"><a href="index.html#about">About</a>
 										<ul class="nav-dropdown">
 											<li><a href="venue.html">Venue&nbsp;</a></li>
 											<li><a href="venue.html#travel">Travel</a></li>
 											<li><a href="organizers.html">Organizers</a></li>
 										</ul>
-									</li>
-									<li><a class="inner-link" href="index.html#pricing-options">Get Tickets </a></li>
-                  <li><a class="inner-link" href="conduct.html">Conduct</a></li>
+									</li> -->
+									<!-- <li><a class="inner-link" href="index.html#pricing-options">Login</a></li>
+                  <li><a class="inner-link" href="conduct.html">Sign Up</a></li> -->
 									<li class="social-link"><a href="http://twitter.com/nodevember" target="default"><i class="icon social_twitter"></i></a></li>
 									<li class="social-link"><a href="http://facebook.com/nodevember" target="default"><i class="icon social_facebook"></i></a></li><li class="social-link"><a href="http://youtube.com/nodevember" target="default"><i class="icon social_youtube icon-large"></i></a></li>
 
@@ -109,16 +111,71 @@
   						<div class="container">
   							<div class="row">
   								<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-  									<img alt="logo" class="logo" src="img/logo.png">
-  									<span class="uppercase text-white"><span class="uppercase text-white">NOVEMBER 20TH TO 21ST - NASHVILLE, TENNESSEE</span></span>
-  									<h1 class="large-h1 text-white">Two days of Node and JavaScript.</h1>
-  									<a href="https://www.eventbrite.com/e/nodevember-2016-tickets-26149837869" target="_blank" class="btn">Get Tickets</a>
-  									<a href="https://www.papercall.io/nodevember2016" target="_blank" class="btn btn-hollow">Submit Talk</a>
+  									<!-- <img alt="logo" class="logo" src="img/logo.png"> -->
+  									<!-- <span class="uppercase text-white"><span class="uppercase text-white">NOVEMBER 20TH TO 21ST - NASHVILLE, TENNESSEE</span></span>
+  									<h1 class="large-h1 text-white">Two days of Node and JavaScript.</h1> -->
+  									<!-- <a href="https://www.eventbrite.com/e/nodevember-2016-tickets-26149837869" target="_blank" class="btn">Get Tickets</a>
+  									<a href="https://www.papercall.io/nodevember2016" target="_blank" class="btn btn-hollow">Submit Talk</a> -->
+                    <button type="submit" target="_blank" class="btn" data-toggle="modal" data-target="#myLoginModal">Login</button>
+                    <button type="submit" target="_blank" class="btn btn-hollow" data-toggle="modal" data-target="#mySignUpModal">Sign Up</button>
   								</div>
   							</div>
   						</div>
   					</li>
   				</ul>
+          <!--modal login -->
+          <div class="modal fade" id="myLoginModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Log-in</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+                  </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
+                </div>
+                    <p class="text-right"><a href="#">Forgot password?</a></p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#" data-dismiss="modal" class="btn">Close</a>
+                    <a href="#" class="btn btn-primary">Log-in</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!--modal signup -->
+          <div class="modal fade" id="mySignUpModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Sign-Up</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+                  </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
+                </div>
+                    <p class="text-right"><a href="#">Forgot password?</a></p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#" data-dismiss="modal" class="btn">Close</a>
+                    <a href="#" class="btn btn-primary">Sign-Up</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+
   			</section>
 
       <a id="cfp" name="cfp" class="in-page-link"></a>
@@ -426,8 +483,6 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/skrollr.min.js"></script>
-
-
         <script src="js/jquery.plugin.min.js"></script>
         <script src="js/jquery.countdown.min.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
