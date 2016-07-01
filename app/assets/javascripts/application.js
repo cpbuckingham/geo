@@ -25,6 +25,7 @@ $(document).ready(function() {
 	// 		$("video").replaceWith($('<video id="videoId" width="100%" autoplay loop controls="controls"><source src="video.mp4" type="video/mp4"></video>'));
 	// 	}
 	// }
+
 	"use strict";
  ``
     /************** Nav Scripts **************/

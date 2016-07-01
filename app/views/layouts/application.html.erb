@@ -16,6 +16,7 @@
     </head>
     <body>
 
+
     	<a id="top"></a>
 
 
@@ -46,8 +47,8 @@
 											<li><a href="organizers.html">Organizers</a></li>
 										</ul>
 									</li> -->
-									<!-- <li><a class="inner-link" href="index.html#pricing-options">Login</a></li>
-                  <li><a class="inner-link" href="conduct.html">Sign Up</a></li> -->
+									<!-- <li><a class="inner-link" href="index.html#pricing-options">Login</a></li>-->
+                  <li><a class="inner-link" href="conduct.html">Contact Us</a></li>
 									<li class="social-link"><a href="http://twitter.com/nodevember" target="default"><i class="icon social_twitter"></i></a></li>
 									<li class="social-link"><a href="http://facebook.com/nodevember" target="default"><i class="icon social_facebook"></i></a></li><li class="social-link"><a href="http://youtube.com/nodevember" target="default"><i class="icon social_youtube icon-large"></i></a></li>
 
@@ -92,6 +93,8 @@
 					</div>
 				</nav>
 		</div>
+
+
 		<div class="main-container">
       <section class="hero-slider">
   				<ul class="slides">
@@ -127,25 +130,26 @@
           <div class="modal fade" id="myLoginModal">
             <div class="modal-dialog">
                 <div class="modal-content">
+                  <%= form_for(:user, :url => {:controller => 'sessions', :action => 'create'}) do |f| %>
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h4 class="modal-title">Log-in</h4>
                   </div>
                   <div class="modal-body">
                     <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+                  <label for="username_or_email">Username or Email</label>
+                  <%= f.text_field :username_or_email, class:"form-control", type:"text", placeholder:"username or email"%>
                   </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
+                  <label for="login_password">Password</label>
+                  <%= f.password_field :login_password, class:"form-control", type:"password", placeholder:"password"%>
                 </div>
                     <p class="text-right"><a href="#">Forgot password?</a></p>
                   </div>
                   <div class="modal-footer">
-                    <a href="#" data-dismiss="modal" class="btn">Close</a>
-                    <a href="#" class="btn btn-primary">Log-in</a>
+                    <%= f.submit :Login, class:"btn btn-primary"%>
                   </div>
+                  <% end %>
                 </div>
               </div>
           </div>
