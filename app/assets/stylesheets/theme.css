@@ -2040,7 +2040,7 @@ form.register {
 form.register div {
   padding: 0px;
 }
-input[type="text"],
+/*input[type="text"],
 form.register .select-holder {
   margin-bottom: 32px;
   padding: 12px;
@@ -2054,7 +2054,7 @@ form.register .select-holder {
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
-}
+}*/
 input[type="text"]:focus,
 form.register .select-holder:focus,
 input[type="text"]:hover,
