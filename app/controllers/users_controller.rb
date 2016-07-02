@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+
+  before_filter :save_login_state, :only => [:new, :create]
+
   def new
     @user = User.new
   end
@@ -19,5 +22,5 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:username, :email, :password, :salt, :encrypted_password)
   end
-  
+
 end
