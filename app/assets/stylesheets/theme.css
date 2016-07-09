@@ -471,7 +471,7 @@ nav .container {
   top: 0px;
   z-index: 10;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 13px;
   padding-bottom: 10px;
   line-height: 1;
   background: none;
@@ -819,7 +819,7 @@ body.detail .sticky-nav .has-dropdown:before {
   .mobile-menu-toggle {
     display: block;
     position: fixed;
-    top: 17px;
+    top: 10px;
     right: 24px;
     color: #333333 !important;
   }
